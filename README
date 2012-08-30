@@ -1,4 +1,29 @@
 The webpage and keep-alive batch script needed to turn a Windows machine
 into an Internet Explorer kiosk.
 
+Files:
+ * KeepIEOpen.bat
+	Main script that launches Internet Explorer and restarts it
+	whenever it closes.
+ * KeepIEOpen_HideScript.bat
+	Runs the main script but hides it from showing up in the task bar.
+ * KillIE.bat
+	Simply kills all running instances of Internet Explorer.  If the
+	KeepIEOpen.bat script is running, Internet Explorer should restart
+	automatically.
+ * Update.bat
+	Invokes 'git' to check the internet for changes to this repository
+	and automatically updates this repository, assuming there are no
+	conflicts.
+ * ResetCycle.bat
+	Simply runs Update.bat and KillIE.bat serially.  Run this script
+	as a Windows Scheduled Task when the computer is idle to update
+	and reset the kiosk.
+ * KioskHome.html
+	The default home page of Internet Explorer when used for this
+	kiosk mode.  This page just contains links to Student Email and
+	Leyburn Library's home page.
+ * README
+	This file.  (META!)
+
 Source: https://github.com/garrettheath4/IE-Kiosk
