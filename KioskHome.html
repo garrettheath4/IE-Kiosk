@@ -1,13 +1,91 @@
 <html>
 <head>
 <title>W&L Kiosk Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-image: url();
+	margin:0;
+}
+body,td,th {
+	font-size: x-large;
+}
+#text-note {
+	font-size: medium;
+	font-style: italic;
+	text-align:center;
+}
+#main-links {
+	font-size: x-large;
+	background-color: #039;
+}
+#logout-text {
+	font-style:normal;
+	background-color: #039;
+}
+
+/* container for stretchable background image */
+#bgImg {
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+z-index: 0;
+}
+/* make image fill container */
+#bgImg img {
+height: 100%;
+width: 100%;
+}
+/* container for everything else in the page */
+#page {
+color: red;
+position:relative;
+z-index: 1;
+}
+</style>
 </head>
-<body alink="#ffcc99" bgcolor="#003399" link="#ff3300" text="white" vlink="#ff3300">
-<table width=100% height=100%>
-<tr>
-<td><font size="42"><b><center><a href="http://mail.wlu.edu/" target="_blank">Student Email</font></a></center></b></td>
-<td><font size="42"><b><center><a href="http://library.wlu.edu/" target="_blank">W&L Library</font></a></center></b></td>
+<body bgcolor="#003399" text="white" link="#ff3300" vlink="#ff3300" alink="#ffcc99">
+
+<!-- put the background-image container into the page -->
+<div id="bgImg"><img src="Backgrounds/Flying Hats.JPG" /></div>
+<!--
+put all the rest of the page's content into the next div -
+it will be "above" (higher z-index) the background
+-->
+<div id="page">
+<center>
+<table width="500">
+<tr height="78">
+<td height="78"><center><img src="Images/WLU_Wordmark_BlueBackground.png" height="100%" alt="W&amp;L Wordmark" longdesc="Images/WLU_Wordmark.png"></center></td>
+ </tr>
+ <tr>
+ <td height="139"><p id="text-note">Click the links below to access the internet. When finished, close all browser windows and click &quot;Logout&quot; below.</p></td>
+ </tr>
+ <tr>
+ <td>
+ 	<table width="100%">
+    <tr>
+    <td><b><center><a href="http://mail.wlu.edu/" target="_blank"><p id="main-links">Student Email</p></a></center></b></td>
+    <td><b><center><a href="http://library.wlu.edu/" target="_blank"><p id="main-links">W&L Library</p></a></center></b></td>
+    </tr>
+    </table>
+ </td>
+ </tr>
+ <tr>
+ <td>
+    <table width="100%">
+    <tr>
+    <td width="20%"></td>
+    <td><center><p id="logout-text"><a href="JavaScript:window.close()">Logout</a></p></center></td>
+    <td width="20%"></td>
+    </tr>
+    </table>
+</td>
 </tr>
 </table>
+</center>
+</div>
 </body>
 </html>
