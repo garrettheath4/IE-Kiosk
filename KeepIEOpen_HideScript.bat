@@ -1,1 +1,1 @@
-%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe powershell -command start-process KeepIEOpen.bat -windowstyle hidden
+powershell -command start-process KeepIEOpen.bat -windowstyle hidden
