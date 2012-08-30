@@ -10,16 +10,20 @@ body {
 body,td,th {
 	font-size: x-large;
 }
+#wlu-logo {
+	background-color: #039;
+}
 #text-note {
-	font-size: medium;
+	font-size: large;
 	font-style: italic;
 	text-align:center;
 }
 #main-links {
-	font-size: x-large;
+	font-size: xx-large;
 	background-color: #039;
 }
 #logout-text {
+	font-size: x-large;
 	font-style:normal;
 	background-color: #039;
 }
@@ -58,13 +62,15 @@ it will be "above" (higher z-index) the background
 <center>
 <table width="500">
 <tr height="78">
-<td height="78"><center><img src="Images/WLU_Wordmark_BlueBackground.png" height="100%" alt="W&amp;L Wordmark" longdesc="Images/WLU_Wordmark.png"></center></td>
+<td height="78"><center><p id="wlu-logo"><img src="Images/WLU_Wordmark_BlueBackground.png" height="100%" alt="W&amp;L Wordmark" longdesc="Images/WLU_Wordmark.png"></p></center></td>
  </tr>
  <tr>
- <td height="139"><p id="text-note">Click the links below to access the internet. When finished, close all browser windows and click &quot;Logout&quot; below.</p></td>
+ <td height="80"><p id="text-note">Click the links below to access the internet.<br>
+   When finished, close all browser windows<br>
+   and click &quot;Logout&quot; below.</p></td>
  </tr>
  <tr>
- <td>
+ <td height="80">
  	<table width="100%">
     <tr>
     <td><b><center><a href="http://mail.wlu.edu/" target="_blank"><p id="main-links">Student Email</p></a></center></b></td>
@@ -74,12 +80,12 @@ it will be "above" (higher z-index) the background
  </td>
  </tr>
  <tr>
- <td>
+ <td height="80">
     <table width="100%">
     <tr>
-    <td width="20%"></td>
+    <td width="22%"></td>
     <td><center><p id="logout-text"><a href="JavaScript:window.close()">Logout</a></p></center></td>
-    <td width="20%"></td>
+    <td width="22%"></td>
     </tr>
     </table>
 </td>
