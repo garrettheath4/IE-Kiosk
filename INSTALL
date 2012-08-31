@@ -1,0 +1,9 @@
+To install this package, simply do the following:
+ - Install GitHub for Windows from windows.github.com to get the
+   command-line tools
+ - Add a shortcut in the "All Programs->Startup" folder that points to
+   the 'KeepIEOpen_HideScript.bat' script
+ - Create a scheduled task that runs 'ResetCycle.bat' every time the
+   computer goes idle.  You might have to go into the Power Options in the
+   Control Panel to define how many minutes of inactivity will cause the
+   computer to consider itself "Idle"
