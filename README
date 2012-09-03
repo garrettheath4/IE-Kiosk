@@ -2,6 +2,10 @@ The webpage and keep-alive batch script needed to turn a Windows machine
 into an Internet Explorer kiosk.
 
 Files:
+ * INSTALL
+	A text file describing how to install this package onto a computer.
+ * README
+	This file.  (META!)
  * KeepIEOpen.bat
 	Main script that launches Internet Explorer and restarts it
 	whenever it closes.
@@ -23,7 +27,5 @@ Files:
 	The default home page of Internet Explorer when used for this
 	kiosk mode.  This page just contains links to Student Email and
 	Leyburn Library's home page.
- * README
-	This file.  (META!)
 
 Source: https://github.com/garrettheath4/IE-Kiosk
