@@ -1,9 +1,13 @@
-To install this package, simply do the following:
- - Install GitHub for Windows from windows.github.com to get the
+To install this package, do the following:
+ - Install GitHub for Windows from http://windows.github.com to get the
    command-line tools
+ - Clone the IE-Kiosk repository into C:\IE-Kiosk
  - Add a shortcut in the "All Programs->Startup" folder that points to
    the 'KeepIEOpen_HideScript.bat' script
  - Create a scheduled task that runs 'ResetCycle.bat' every time the
-   computer goes idle.  You might have to go into the Power Options in the
-   Control Panel to define how many minutes of inactivity will cause the
-   computer to consider itself "Idle"
+   computer goes idle.
+    - Make sure that the user that this task is running under has write
+      access to C:\IE-Kiosk so that it can update properly
+    - You might have to go into the Power Options in the
+      Control Panel to define how many minutes of inactivity will cause the
+      computer to consider itself "Idle"
