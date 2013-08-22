@@ -1,4 +1,11 @@
 :loop
+
+tasklist /nh /fi "imagename eq iexplore.exe" | find /i "iexplore.exe" >nul && (
+echo Internet Explorer is already running
+) || (
+echo Starting Internet Explorer kiosk mode...
 "C:\Program Files\Internet Explorer\iexplore.exe" -private "file:///C:/IE-Kiosk/KioskHome.html"
-timeout 1
+)
+
+timeout 5
 GOTO loop
